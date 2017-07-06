@@ -2,6 +2,10 @@
 
 Execute multiple asynchronous functions and when they are finished execute the callback with result parameters from the functions run.
 
+## Important note
+
+This package is still under development
+
 ## Install
 
 `npm install river-functions`
