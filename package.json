@@ -1,0 +1,29 @@
+{
+  "name": "river-functions",
+  "version": "1.0.0",
+  "description": "Execute multiple asynchronous functions and when they are finished execute the callback",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristidraghici/river-functions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristidraghici/river-functions/issues"
+  },
+  "homepage": "https://github.com/cristidraghici/river-functions#readme",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
