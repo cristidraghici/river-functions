@@ -1,24 +1,4 @@
-# river-functions
-
-Execute multiple asynchronous functions and when they are finished execute the callback with result parameters from the functions run.
-
-## Important note
-
-This package is still under active development. Suggestions and issue reports are more than welcome!
-
-## Install
-
-`npm install river-functions`
-
-## Development
-
-- `npm install`
-- `npm install babel-cli -g`
-
-## Full example usage
-
-```javascript
-import river from 'river-functions'
+import river from '../src/index'
 import {each} from 'lodash'
 
 // Log the errors
@@ -26,7 +6,7 @@ const log = console.log;
 
 // Demo function to execute asynchronously
 const asyncFunction = (data, callback) => {
-    const err = Math.floor((Math.random() * 10) + 1) === 1; // random between 1 and 10\. If 1, error is true
+    const err = Math.floor((Math.random() * 10) + 1) === 1; // random between 1 and 10. If 1, error is true
 
     if (err) {
         return callback(err);
@@ -72,4 +52,3 @@ river(functionsRiver, (status, results, errors) => {
     // Close the job
     log('Successful execution: ', results);
 });
-```

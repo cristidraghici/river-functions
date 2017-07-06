@@ -4,9 +4,9 @@
   "description": "Execute multiple asynchronous functions and when they are finished execute the callback",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "babel-node test/index.js",
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
-    "prepublish": "npm run build"
+    "prepublish": "echo 'Work in progress' && exit"
   },
   "repository": {
     "type": "git",
