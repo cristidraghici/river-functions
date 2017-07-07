@@ -53,6 +53,7 @@ var exec = function exec(tasks, callback) {
     var yes = function yes(task_id, output) {
         // Store the output
         results[task_id] = output;
+        errors[task_id] = false;
 
         // Check if all tasks are done
         complete.call(undefined);
