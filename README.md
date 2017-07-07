@@ -15,6 +15,10 @@ This package is still under active development. Suggestions and issue reports ar
 - `npm install`
 - `npm install babel-cli -g`
 
+## Testing
+
+`npm run test`
+
 ## Full example usage
 
 ```javascript
